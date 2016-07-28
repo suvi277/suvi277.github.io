@@ -1,4 +1,5 @@
 document.querySelector(".main-title").addEventListener("click", function (evt) {
+  
   var title = document.querySelector(".main-title"),
     messagesContainer = document.querySelector(".messages-container");
 
