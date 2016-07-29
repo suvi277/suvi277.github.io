@@ -21,6 +21,9 @@
     },{
       name: "Pinky",
       msg: "All the very best to you! Will miss you very badly. Suvarna, you have been a very good friend cum colleague of mine. Working with you was really enjoyable. Thank you for all your help and support. I have never seen you impatient towards your work. Your debugging skills are awesome. I have learnt a lot from you and would love to work again in future. Will miss all the chit chats we use to have."
+    },{
+      name: "Surbhi",
+      msg: "Life is about cherishing the past ( working with you has made everyday a blast, my rockstar, I miss you a lot), facing the present and moving towards new milestones. I wish you all the best with your endeavors and may everything comes out in your favor, everywhere you go everything you do, may lady luck smiles down at you. Good luck"
     }]
   }
 
