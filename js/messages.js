@@ -20,13 +20,12 @@
       msg: "Right from the start, when you and Surbhi came to our help during the training in Project Tracker, the code reviews that you gave was the starting of my looking for excellence in writting good code. More than anything, I've learnt from you the joy of puns, sharing and laughing with the team, and working as if it was a party. The little conversations that I'd with you, over a short period of time, will always be a stubborn part of my learning. You're an excellent listener and very good teacher ( once explained from you, one wouldn't ever forget a thing ). Thank you for all your help, support, guidance, all the very best. May your ways be auspicious"
     },{
       name: "Pinky",
-      msg: "All the very best to you! Will miss you very badly. Suvarna, you have been a very good friend cum colleague of mine. Working with you was really enjoyable. Thank you for all your help and support. I have never seen you impatient towards your work. Your debugging skills are awesome. I have learnt a lot from you and would love to work again in future. Will miss all the chit chats we use to have."
+      msg: "All the very best to you! Will miss you very badly. Suvarna, you have been a very good friend cum colleague of mine. After Surbhi you were the only POC  from whom I got to know more about the framework and components. Working with you was really enjoyable. Thank you for all your help and support. I have never seen you impatient towards your work. Your debugging skills are awesome.You have always been a fun loving and an open hearted person. I have learnt a lot from you and would love to work again in future. Will miss all the chit chats we use to have. Nobody can replace your place seriously "
     },{
       name: "Surbhi",
       msg: "Life is about cherishing the past ( working with you has made everyday a blast, my rockstar, I miss you a lot), facing the present and moving towards new milestones. I wish you all the best with your endeavors and may everything comes out in your favor, everywhere you go everything you do, may lady luck smiles down at you. Good luck"
     }]
   }
-
 
   var names = $("#names").html(),
     messages = $("#messages").html();
