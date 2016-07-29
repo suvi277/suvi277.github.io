@@ -11,6 +11,13 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/suvarna.css" />
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <!--[if IE]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -26,7 +33,7 @@
       </div>
 
 			<div class="love">
-				<nav class="names-container" id="messages-container">
+				<nav class="names-container" id="names-container">
 
 				</nav>
 				<section class="messages-container" id="messages-container">
@@ -40,7 +47,7 @@
 			<h2>Your Well-wishers</h2>
 				<ul>
 					{{#friends}}
-						<li class="name">{{name}}</li>
+						<li class="name ripple">{{name}}</li>
 					{{/friends}}
 				</ul>
 		</script>
@@ -48,15 +55,15 @@
 		<script id="messages" type="text/x-handlebars-template">
 			<div>
 				{{#if name}}
-					<h2>{{name}} wants to say this to you</h2>
+					<h2>{{name}} wants to say this to you></h2>
 				{{else}}
 					<h2>Farewell Messages</h2>
 				{{/if}}
 
 				{{#if msg}}
-					<span>{{msg}}</span>
+					<span class="real-msg">{{msg}}</span>
 				{{else}}
-					<span>Click on the persons on the left side to see what they want to say before you leave :(</span>
+					<span class="real-msg">Click on the persons on the left side to see what they want to say before you leave :(</span>
 				{{/if}}
 
 			</div>

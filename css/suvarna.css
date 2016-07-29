@@ -40,14 +40,51 @@
 	color: inherit;
 }
 
+.love {
+	background: rgba(255, 118, 0, 0.23);
+}
 .love .names-container, .love .messages-container {
 	display: inline-block;
 	vertical-align: top;
 }
 
+.love .names-container {
+	width: 25%;
+	/*border: 1px solid black;*/
+}
+.love .names-container ul {
+	list-style-type: none;
+}
+
+.love .names-container li {
+	padding: 1%;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid black;
+	font-size: 1.5rem;
+	font-family: 'Pacifico', cursive;
+}
+
+.love .names-container h2 {
+	text-align: center;
+	padding-left: 17%;
+	font-size: 2rem;
+	font-family: 'Rochester', cursive;
+}
 .love .messages-container {
-	margin-left: 25%;
+	margin-left: 4%;
   text-align: center;
+	width: 60%;
+}
+
+.love .messages-container h2{
+	font-size: 2rem;
+font-family: 'Homemade Apple', cursive;
+}
+
+.love .messages-container .real-msg {
+	font-size: 2rem;
+font-family: 'Clicker Script', cursive;
 }
 
 @media only screen and (max-width : 768px) {
