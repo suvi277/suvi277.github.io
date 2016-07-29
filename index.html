@@ -14,6 +14,7 @@
         <!--[if IE]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 	</head>
 	<body>
 		<div class="container suvarna">
@@ -23,17 +24,53 @@
             <h1 class="main-title">Click Here To Begin Farewell</h1>
         </div>
       </div>
-			<div class="messages-container">
 
+			<div class="love">
+				<nav class="names-container" id="messages-container">
+
+				</nav>
+				<section class="messages-container" id="messages-container">
+
+				</section>
 			</div>
 
 		</div><!-- /container -->
 
+		<script id="names" type="text/x-handlebars-template">
+			<h2>Your Well-wishers</h2>
+				<ul>
+					{{#friends}}
+						<li class="name">{{name}}</li>
+					{{/friends}}
+				</ul>
+		</script>
+
+		<script id="messages" type="text/x-handlebars-template">
+			<div>
+				{{#if name}}
+					<h2>{{name}} wants to say this to you</h2>
+				{{else}}
+					<h2>Farewell Messages</h2>
+				{{/if}}
+
+				{{#if msg}}
+					<span>{{msg}}</span>
+				{{else}}
+					<span>Click on the persons on the left side to see what they want to say before you leave :(</span>
+				{{/if}}
+
+			</div>
+
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/TextPlugin.min.js"></script>
+
     <script src="js/rAF.js"></script>
     <script src="js/suvarna.js"></script>
     <script src="js/afterclick.js"></script>
+    <script src="js/messages.js"></script>
 	</body>
 </html>

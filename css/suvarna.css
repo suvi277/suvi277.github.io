@@ -40,6 +40,16 @@
 	color: inherit;
 }
 
+.love .names-container, .love .messages-container {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.love .messages-container {
+	margin-left: 25%;
+  text-align: center;
+}
+
 @media only screen and (max-width : 768px) {
 	.suvarna .main-title{
 		font-size: 3em;

@@ -1,35 +1,39 @@
 document.querySelector(".main-title").addEventListener("click", function (evt) {
-
   var title = document.querySelector(".main-title"),
-    messagesContainer = document.querySelector(".messages-container");
+    love = document.querySelector(".love"),
+
 
   tl = new TimelineMax();
   tl_msgs = new TimelineMax();
 
-  tl.to(title, 1, {
-    width: window.innerWidth
+  tl_msgs.to(love, 0.01 , {
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  tl.to(title, 2, {
+    width: window.innerWidth,
+    ease: SlowMo.ease.config(0.7, 0.7, false),
+    onReverseComplete: function(){
+      scrollToMsgs();``
+    }
   });
 
   tl.to(title, 2, {
     padding: "100% 0"
   });
 
-  tl.to(title, 0, {
-    text: "",
+  tl.to(title, 2, {
+    text: "Here We Go!",
+    fontSize: "4em",
     onComplete: function(){
       tl.reverse();
-      scrollToMsgs();
     }
-  });
+  }, "+=0.2")
 
   function scrollToMsgs(){
-    tl_msgs.to(messagesContainer, 0 , {
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-
     tl_msgs.to(window, 2, {
-      scrollTo: messagesContainer
+      scrollTo: love
     });
   }
 });
