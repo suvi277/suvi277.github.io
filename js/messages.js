@@ -37,8 +37,8 @@
   $('.messages-container').html(templateMessages({}));
 
   $(".name").click(function(evt){
-    // $(".name").removeClass("active");
-    // $(this).toggleClass("active");
+    $(".name").removeClass("active");
+    $(this).toggleClass("active");
     var name = $(this).html();
     console.log(name);
     var selectedPerson = data.friends.filter(function(person){
